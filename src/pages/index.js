@@ -11,8 +11,7 @@ const IndexPage = () => (
     <h3 className="lightText">Juan F Mena</h3>
     <h1>Interaction & Experience Designer</h1>
     <h3 className="lightText borders">
-      I specialize in design tooling and user research focused prototyping of
-      mobile apps.
+	  I specialize in prototype-driven design exploration for mobile apps and user research.
     </h3>
     <p>
       I'm contracting at Disney, and live in Seattle with my wife Carmen. <br />
