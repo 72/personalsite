@@ -19,8 +19,8 @@ const IndexPage = () => (
     </p>
     <p>
       <p>
-        Let's talk, get in touch by{" "}
-        <a href="mailto:by72mena@gmail.com">email</a> or through{" "}
+        Let's talk. Get in touch through {" "}
+        <a href="mailto:by72mena@gmail.com">email</a> or {" "}
         <a href="https://twitter.com/72mena" target="_blank">
           Twitter
         </a>
