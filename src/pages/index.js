@@ -11,7 +11,8 @@ const IndexPage = () => (
     <h3 className="lightText">Juan F Mena</h3>
     <h1>Interaction & Experience Designer</h1>
     <h3 className="lightText borders">
-	  I specialize in prototype-driven design exploration for mobile apps and user research.
+      I specialize in prototype-driven design exploration for mobile apps and
+      user research.
     </h3>
     <p>
       I'm contracting at Disney, and live in Seattle with my wife Carmen. <br />
@@ -19,8 +20,8 @@ const IndexPage = () => (
     </p>
     <p>
       <p>
-        Let's talk. Get in touch through {" "}
-        <a href="mailto:by72mena@gmail.com">email</a> or {" "}
+        Let's talk. Get in touch through{" "}
+        <a href="mailto:by72mena@gmail.com">email</a> or{" "}
         <a href="https://twitter.com/72mena" target="_blank">
           Twitter
         </a>
