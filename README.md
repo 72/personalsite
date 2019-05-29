@@ -2,6 +2,6 @@
 
 ## 🚀 Personal Site
 
-**Testing Gatsby for my personal site.**
+**Testing Gatsby and Netlify for my personal site.**
 
 by72mena@gmail.com
