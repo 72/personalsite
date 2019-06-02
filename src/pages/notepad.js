@@ -23,7 +23,7 @@ const NotepadPage = () => (
         I believe writing helps me improve my focus and thinking.
       </h3>
       <p>
-        English is not my fist language, so this exercise is a worthwhile multi-layered challenge to me.
+        English is not my first language, so this exercise is a worthwhile multi-layered challenge to me.
       </p>
       <div className="gridNotes">
         <NotepadLink
