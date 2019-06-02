@@ -31,24 +31,15 @@ const Layout = ({ children }) => (
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
+            padding: `0px 1.2rem 0`,
             paddingTop: 0,
           }}
         >
           <main>{children}</main>
-          <footer>
-            {/* <p>Let's Talk</p>
-            <p>
-              Email:{" "}
-              <a href="mailto:by72mena@gmail.com">by72mena [at] gmail.com</a>
-            </p>
-            <p>
-              Twitter:{" "}
-              <a href="https://twitter.com/72mena" target="_blank">
-                @72mena
-              </a>
-            </p> */}
-			<p className="square"><small>72</small></p>
+          <footer style={{
+            textAlign: 'center',
+          }}>
+            <p className="square"><small>72</small></p>
           </footer>
         </div>
       </>

@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Mandali&display=swap');
 
+/*
+Colors:
+
+light red: #EB5757
+light-gray: #7C89A4
+white: #C7CDD0
+melon: #D2AF78
+light-yellow: #DECC55
+
+
+*/
 
 body {
-	background: #303336;
+	/* background: #303336; */
+	background: #252836;
 	color: #f1f1f1;
 	font-family: 'Mandali', sans-serif;
 }
 
 a{
-	color: #EB5757;
+	color: #DECC55;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,8 +40,37 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 2rem;
 }
 
+nav a{
+	text-decoration: none;
+	color: #F9F4E9;
+}
+
+.gridNotes{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	margin-top: 60px;
+}
+
+
+.noteCard{
+	padding: 10px;
+	border: 1px solid #50525e;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #191c25;
+	transition: all 0.33s;
+}
+
+.noteCard:hover {
+	border: 1px solid #777;
+	border-radius: 5px;
+	background-color: #2e3245;
+}
+
+
 footer{
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .square small {
