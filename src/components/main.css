@@ -56,16 +56,16 @@ nav a{
 
 a.noteCard{
 	padding: 10px;
-	border: 1px solid #50525e;
-	border-radius: 5px;
-	box-shadow: 0 0 10px #191c25;
+	/* border: 1px solid #50525e; */
+	border-radius: 10px;
+	/* box-shadow: 0 0 10px #191c25; */
 	transition: all 0.33s;
 	text-decoration: none;
 }
 
 .noteCard:hover {
-	border: 1px solid #777;
-	border-radius: 5px;
+	/* border: 1px solid #777; */
+	/* border-radius: 5px; */
 	background-color: #2e3245;
 }
 
@@ -73,7 +73,10 @@ a.noteCard{
 	color: #DEDEDE;
 }
 
-
+.noteCard img{
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
 
 footer{
 	margin-top: 60px;

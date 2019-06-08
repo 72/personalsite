@@ -4,6 +4,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//Assets
+
+import uxsettings from "../images/notepad/uxsettings.jpg";
+
 const NotepadPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -23,13 +27,15 @@ const NotepadPage = () => (
         I believe writing helps me improve my focus and thinking.
       </h3>
       <p>
-        English is not my first language, so this exercise is a worthwhile multi-layered challenge to me.
+        English is not my first language, so this exercise is a worthwhile
+        multi-layered challenge to me.
       </p>
       <div className="gridNotes">
         <NotepadLink
-          link="https://web.archive.org/web/20160610202642/http://setentaydos.com/the-ux-of-mobile-settings/"
           type="Article"
           label="The UX of Mobile Settings"
+          image={uxsettings}
+          link="https://web.archive.org/web/20160610202642/http://setentaydos.com/the-ux-of-mobile-settings/"
         />
         <NotepadLink
           link="https://web.archive.org/web/20161104102728/http://setentaydos.com/android-ios-keyboard-experiences/"
@@ -60,8 +66,10 @@ export default NotepadPage
 
 
 function NotepadLink(props) {
+  console.log(props.image)
   return (
     <a className="noteCard" href={props.link} target="_blank">
+      <img src={props.image} alt={props.label} />
       <div>
         <small
           style={{
@@ -75,6 +83,4 @@ function NotepadLink(props) {
     </a>
   )
 }
-
-
 
