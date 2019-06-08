@@ -60,18 +60,20 @@ export default NotepadPage
 
 
 function NotepadLink(props) {
-  return <div className="noteCard">
-    <small style={{
-      opacity: 0.5,
-    }}>
-      {props.type}
-    </small>
-    <p>
-      <a href={props.link} target="_blank">
-        {props.label}
-      </a>
-    </p>
-  </div>;
+  return (
+    <a className="noteCard" href={props.link} target="_blank">
+      <div>
+        <small
+          style={{
+            opacity: 0.5,
+          }}
+        >
+          {props.type}
+        </small>
+        <p>{props.label} →</p>
+      </div>
+    </a>
+  )
 }
 
 
