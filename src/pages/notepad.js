@@ -5,13 +5,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 //Assets
-
 import uxsettings from "../images/notepad/uxsettings.jpg";
+import keyboard from "../images/notepad/keyboard.jpg";
+import unlocking from "../images/notepad/unlocking.jpg";
+import layered from "../images/notepad/layered.jpg";
+import numbers from "../images/notepad/numbers.jpg"
+
 
 const NotepadPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div
+    <div 
       style={{
         textAlign: "left",
       }}
@@ -38,24 +42,28 @@ const NotepadPage = () => (
           link="https://web.archive.org/web/20160610202642/http://setentaydos.com/the-ux-of-mobile-settings/"
         />
         <NotepadLink
-          link="https://web.archive.org/web/20161104102728/http://setentaydos.com/android-ios-keyboard-experiences/"
           type="Article"
           label="Android & iOS Keyboard Experiences"
+          image={keyboard}
+          link="https://web.archive.org/web/20161104102728/http://setentaydos.com/android-ios-keyboard-experiences/"
         />
         <NotepadLink
-          link="https://medium.com/@72mena/unlocking-ideas-with-framer-studio-790b5e9c249f"
           type="Medium Article"
           label="Unlocking ideas with Framer Studio"
+          image={unlocking}
+          link="https://medium.com/@72mena/unlocking-ideas-with-framer-studio-790b5e9c249f"
         />
         <NotepadLink
-          link="https://blog.framer.com/from-a-to-b-and-back-again-196ffd26ec48"
           type="Medium Article"
           label="From A to B and back again"
+          image={layered}
+          link="https://blog.framer.com/from-a-to-b-and-back-again-196ffd26ec48"
         />
         <NotepadLink
-          link="https://medium.com/@72mena/a-change-in-motion-162a2372d75e"
           type="Medium Article"
           label="A change in motion"
+          image={numbers}
+          link="https://medium.com/@72mena/a-change-in-motion-162a2372d75e"
         />
       </div>
     </div>
@@ -69,7 +77,7 @@ function NotepadLink(props) {
   console.log(props.image)
   return (
     <a className="noteCard" href={props.link} target="_blank">
-      <img src={props.image} alt={props.label} />
+      { props.image ? (<img src={props.image} alt={props.label} />) : null }
       <div>
         <small
           style={{
