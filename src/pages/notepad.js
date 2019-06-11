@@ -12,11 +12,11 @@ import layered from "../images/notepad/layered.jpg";
 import numbers from "../images/notepad/numbers.jpg"
 
 //Assets
-import figma from "../images/tools/figma.png";
-import framer from "../images/tools/framer.png"
-import principle from "../images/tools/principle.png"
-import flutter from "../images/tools/flutter.png"
-import penpaper from "../images/tools/penpaper.png"
+import figma from "../images/tools/Figma.png";
+import framer from "../images/tools/Framer.png"
+import principle from "../images/tools/Principle.png"
+import flutter from "../images/tools/Flutter.png"
+import penpaper from "../images/tools/PenPaper.png"
 
 const NotepadPage = () => (
   <Layout>
