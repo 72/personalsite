@@ -11,11 +11,17 @@ import unlocking from "../images/notepad/unlocking.jpg";
 import layered from "../images/notepad/layered.jpg";
 import numbers from "../images/notepad/numbers.jpg"
 
+//Assets
+import figma from "../images/tools/figma.png";
+import framer from "../images/tools/framer.png"
+import principle from "../images/tools/principle.png"
+import flutter from "../images/tools/flutter.png"
+import penpaper from "../images/tools/penpaper.png"
 
 const NotepadPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <div 
+    <SEO title="Notepad" />
+    <div
       style={{
         textAlign: "left",
       }}
@@ -67,6 +73,38 @@ const NotepadPage = () => (
         />
       </div>
     </div>
+    <h3
+      style={{
+        margin: "60px 0 20px",
+      }}
+    >
+      Design Tools
+    </h3>
+    <h5 className="lightText">
+      I'm currently hacking with:
+    </h5>
+    <div className="tools-grid">
+      <div>
+        <img src={figma} />
+        <p>Figma</p>
+      </div>
+      <div>
+        <img src={framer} />
+        <p>Framer</p>
+      </div>
+      <div>
+        <img src={principle} />
+        <p>Principle</p>
+      </div>
+      <div>
+        <img src={flutter} />
+        <p>Flutter</p>
+      </div>
+      <div>
+        <img src={penpaper} />
+        <p>Pen & Paper</p>
+      </div>
+    </div>
   </Layout>
 )
 
@@ -81,7 +119,7 @@ function NotepadLink(props) {
       <div>
         <small
           style={{
-            opacity: 0.5,
+            opacity: 0.75,
           }}
         >
           {props.type}

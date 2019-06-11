@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const LabPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Lab" />
     <div
       style={{
         textAlign: "left",
@@ -23,7 +23,7 @@ const LabPage = () => (
         I enjoy learning new things and sharing what I learn.
       </h3>
       <p>
-        Right now I'm diving into Gatsby, GraphQL, and Flutter. <br />
+        Right now I'm diving into Gatsby and Flutter. <br />
         Here's a list of experiments I've worked on:
       </p>
       <LabLink
@@ -73,7 +73,7 @@ function LabLink(props) {
     margin: "60px 0",
   }}>
     <small style={{
-      opacity: 0.5,
+      opacity: 0.75,
     }}>
       {props.type}
     </small>

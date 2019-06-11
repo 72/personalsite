@@ -14,7 +14,8 @@ light-yellow: #DECC55
 
 body {
 	/* background: #303336; */
-	background: #252836;
+	/* background: #252836; */
+	background: #342C57;
 	color: #f1f1f1;
 	font-family: 'Mandali', sans-serif;
 }
@@ -56,17 +57,15 @@ nav a{
 
 a.noteCard{
 	padding: 10px;
-	/* border: 1px solid #50525e; */
 	border-radius: 10px;
-	/* box-shadow: 0 0 10px #191c25; */
-	transition: all 0.33s;
+	transition: all 0.2s;
 	text-decoration: none;
 }
 
 .noteCard:hover {
-	/* border: 1px solid #777; */
-	/* border-radius: 5px; */
-	background-color: #2e3245;
+	/* background-color: #2e3245; */
+	background-color: rgb(67, 55, 116);
+	/* transform: scale(1.03); */
 }
 
 .noteCard small{
@@ -84,7 +83,62 @@ footer{
 
 .square small {
 	border: 1px solid;
-	margin-top: 80px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	padding: 8px 12px;
 	color: #AAA;
+}
+
+.section{
+	margin:100px 0;
+	/* border-top: 1px solid pink;
+	border-bottom: 1px solid pink; */
+}
+
+.homegrid-container{
+	display: grid;
+	grid-template-columns: 0.7fr 1.3fr;
+	grid-gap: 50px;
+	padding: 40px 0;
+}
+
+.homegrid-container h3{
+	margin-bottom: 0px;
+}
+
+.homegrid-container .description{
+	text-align: right;
+}
+
+.homegrid-container .description p {
+	color: #AAA;
+}
+
+.tools-grid{
+	display: grid;
+	max-width: 600px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	text-align: center;
+}
+
+.tools-grid img{
+	margin-bottom: 5px;
+	opacity: 0.9;
+}
+
+.leftAlign{
+	text-align: left;
+}
+
+
+@media screen and (max-width: 750px){
+	.homegrid-container {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+
+	.homegrid-container .description{
+		text-align: center;
+	}
 }
