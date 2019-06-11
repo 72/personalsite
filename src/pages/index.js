@@ -33,15 +33,15 @@ const IndexPage = () => (
       <h4
         className="lightText"
         style={{
-          margin: "140px"
+		  margin: "140px 0"
         }}
       >
-        I'm contracting at Disney and live in Seattle with my wife Carmen. I
+        I'm contracting at Disney and live in Seattle with my wife Carmen. <br/>I
         believe in portfolios, but I don't share Disney-related work online.
       </h4>
 
       <p>
-        Let's talk. Get in touch: <a href="mailto:by72mena@gmail.com">Email</a>{" "}
+        Let's talk. Get in touch:<br/> <a href="mailto:by72mena@gmail.com">Email</a>{" "}
         -{" "}
         <a href="https://twitter.com/72mena" target="_blank">
           Twitter
