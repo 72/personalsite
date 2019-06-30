@@ -3,55 +3,52 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//Assets
+import avatar72 from "../images/72avatar.png";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div
-      style={{
-        textAlign: "center",
-      }}
-    >
-      <h1
-        style={{
-          margin: "60px 0",
-        }}
-      >
-        Interaction & Experience Designer
-      </h1>
-      <small
-        style={{
-          opacity: 0.75,
-        }}
-      >
-        FOCUS
-      </small>
-      <h3 className="lightText">
-        Prototype-driven design exploration of mobile apps
-      </h3>
-
-      <h4
-        className="lightText"
-        style={{
-		  margin: "140px 0"
-        }}
-      >
-        I'm contracting at Disney and live in Seattle with my wife Carmen. <br/>I
-        believe in portfolios, but I don't share Disney-related work online.
-      </h4>
-
+    <div className="nameSection">
+      <div>
+        <img src={avatar72} alt={"Avatar"} />
+      </div>
+      <div>
+        <h2>
+          Juan Flores Mena
+          <br />
+          Interaction & Experience Designer
+        </h2>
+      </div>
+    </div>
+    <p className="homeDescription">
+      At Disney Parks & Resorts I’ve focused on feature ideation and
+      prototype-driven design exploration of mobile apps.
+    </p>
+    <div className="sectionPanel">
+      <h2>Work</h2>
       <p>
-        Let's talk. Get in touch:<br/> <a href="mailto:by72mena@gmail.com">Email</a>{" "}
-        -{" "}
-        <a href="https://twitter.com/72mena" target="_blank">
-          Twitter
-        </a>{" "}
-        -{" "}
-        <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank">
-          LinkedIn
-        </a>
+        I believe in portfolios, but I don't share Disney related work online.
+        </p>
+        <p>
+        This is a list of experiments I’ve done to explore solutions on Disney
+        projects.
       </p>
     </div>
+    
+
+    
+    <p>
+      Let's talk. Get in touch:
+      <br /> <a href="mailto:by72mena@gmail.com">Email</a> -{" "}
+      <a href="https://twitter.com/72mena" target="_blank">
+        Twitter
+      </a>{" "}
+      -{" "}
+      <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank">
+        LinkedIn
+      </a>
+    </p>
   </Layout>
 )
 
