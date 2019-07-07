@@ -21,9 +21,13 @@ const Header = ({ siteTitle }) => (
         }}
       >
         <Link to="/">Home</Link>
-        <Link to="/work">Work</Link>
-        <Link to="/notepad">Notepad</Link>
-        <a href="https://twitter.com/72mena" target="_blank">
+        <Link to="/#work">Work</Link>
+        <Link to="/#writing">Writing</Link>
+        <a
+          href="https://twitter.com/72mena"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Twitter
         </a>
       </nav>

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -69,20 +68,26 @@ export default LabPage
 
 
 function LabLink(props) {
-  return <div style={{
-    margin: "60px 0",
-  }}>
-    <small style={{
-      opacity: 0.75,
-    }}>
-      {props.type}
-    </small>
-    <p>
-      <a href={props.link} target="_blank">
-        {props.label}
-      </a>
-    </p>
-  </div>;
+  return (
+    <div
+      style={{
+        margin: "60px 0",
+      }}
+    >
+      <small
+        style={{
+          opacity: 0.75,
+        }}
+      >
+        {props.type}
+      </small>
+      <p>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          {props.label}
+        </a>
+      </p>
+    </div>
+  )
 }
 
 

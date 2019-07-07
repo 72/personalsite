@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -80,28 +80,26 @@ const NotepadPage = () => (
     >
       Design Tools
     </h3>
-    <h5 className="lightText">
-      I'm currently hacking with:
-    </h5>
+    <h5 className="lightText">I'm currently hacking with:</h5>
     <div className="tools-grid">
       <div>
-        <img src={figma} />
+        <img src={figma} alt="Tool Logo" />
         <p>Figma</p>
       </div>
       <div>
-        <img src={framer} />
+        <img src={framer} alt="Tool Logo" />
         <p>Framer</p>
       </div>
       <div>
-        <img src={principle} />
+        <img src={principle} alt="Tool Logo" />
         <p>Principle</p>
       </div>
       <div>
-        <img src={flutter} />
+        <img src={flutter} alt="Tool Logo" />
         <p>Flutter</p>
       </div>
       <div>
-        <img src={penpaper} />
+        <img src={penpaper} alt="Tool Logo" />
         <p>Pen & Paper</p>
       </div>
     </div>
@@ -114,8 +112,13 @@ export default NotepadPage
 function NotepadLink(props) {
   console.log(props.image)
   return (
-    <a className="noteCard" href={props.link} target="_blank">
-      { props.image ? (<img src={props.image} alt={props.label} />) : null }
+    <a
+      className="noteCard"
+      href={props.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {props.image ? <img src={props.image} alt={props.label} /> : null}
       <div>
         <small
           style={{
