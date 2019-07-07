@@ -37,8 +37,7 @@ const ArticleKeyboardExperiences = () => (
     <div className="gridSection">
       <div>
         <p className="sideNote">
-          I wrote this analysis way back in 2016. This article was translated to
-          Chinese by Author.
+          I wrote this analysis in 2016. Many of the observations may have been addressed already by the evolution of iOS and Android. I'm leaving it as is to have a reference of how the keyboard on these OSs used to be.
         </p>
       </div>
       <div />

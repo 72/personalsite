@@ -30,14 +30,23 @@ const ArticleUXPage = () => (
     <div className="gridSection">
       <div>
         <p className="sideNote">
-          I wrote this analysis way back in 2014. This article was translated to
-          Chinese by Author.
+          I wrote this analysis way back in 2014. This article was translated to { }
+          <a href="https://web.archive.org/web/20160401005805/http://www.hoowolf.net/2014/11/20/the-ux-of-mobile-settings/">
+            Chinese
+          </a>{" "}
+          by 胡太狼.
+          <br />
+        </p>
+        <p className="sideNote">
+          Although the OS described here are outdated by today's standards, I
+          thought it would be interesting to bring this article back and be
+          reminded of how things used to be when we had 3 mobile platforms.
         </p>
       </div>
       <div />
       <div>
         <p>
-          We love to analyze and write/read about good UX. It's common practice
+          We love to analyze and read about good UX. It's common practice
           to pick an app, redesign a few screens without any constrains and then
           share the result in Dribbble. However, more often than not, business
           requirements in real projects and client's platform-constrains tend to
@@ -308,7 +317,6 @@ const ArticleUXPage = () => (
     </MidColumn>
 
     <Spacer />
-
   </Layout>
 )
 
