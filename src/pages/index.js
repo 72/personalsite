@@ -27,7 +27,7 @@ const IndexPage = () => (
 
     <Introduction />
 
-    <a name="work" />
+    <a name="work"></a>
     <LeftPanel title="Work">
       <p>
         I believe in portfolios, but I don't share Disney related work online.
@@ -67,12 +67,6 @@ const IndexPage = () => (
       linkTo="http://setentaydos.com/sequence/"
     />
 
-    {/* <Post
-      image={keyboard}
-      type="Github Repo"
-      title="Learning Flutter"
-      link="learning-flutter"
-    /> */}
 
     <a name="writing" />
     <LeftPanel title="Writing">

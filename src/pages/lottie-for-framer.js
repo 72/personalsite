@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -99,14 +100,8 @@ const CaseLottieForFramer = () => (
       <p>
         Great question. I really like talking about this project, and if you're
         interested in a deep dive,{" "}
-        <a
-          href="72mena.com/a-change-in-motion"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          check out this article
-        </a>{" "}
-        I wrote about it.
+        <Link to={"a-change-in-motion"}>check out this article</Link> I wrote
+        about it.
       </p>
       <p>
         {" "}
@@ -242,13 +237,7 @@ const CaseLottieForFramer = () => (
       </p>
       <p>
         Make sure to read a deep dive on my article:{" "}
-        <a
-          href="72mena.com/a-change-in-motion"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          A Change in Motion
-        </a>
+        <Link to={"a-change-in-motion"}>A Change in Motion</Link>
       </p>
     </MidColumn>
 
