@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 //Assets
 import avatar72 from "../images/72avatar.png";
+import avatar72complete from "../images/72completeavatar.png";
 
 //Assets - Writing
 import uxsettings from "../images/notepad/uxsettings.jpg";
@@ -25,7 +26,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <Introduction />
+    <IntroductionUpdate />
 
     <a name="work"></a>
     <LeftPanel title="Work">
@@ -140,6 +141,34 @@ function Introduction(props){
       </div>
       <p className="summary">
         At Disney Parks & Resorts I’ve focused on prototype-driven design exploration of mobile apps.
+      </p>
+      <div className="detailedInfo">
+        <p>The output of my work helps teams tell a story to obtain senior leadership buy-in, get a budget approved, align groups across the org, and conduct user testings.</p>
+        <p>For example, I worked with Disney for four years, leading exploration efforts of near-future and speculative features for their Parks & Resorts mobile apps.</p>
+        <p>I hold a bachelor's degree in Design by the UANL (México) and a certificate in Human-Computer Interaction by the MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL).</p>
+      </div>
+    </div>
+  )
+}
+
+function IntroductionUpdate(props){
+  return (
+    <div>
+      <div className="introInfo">
+        <div>
+          <img src={avatar72complete} alt={"Avatar"} />
+        </div>
+        <div className="mainDescription">
+          <h2>
+            Juan Flores Mena
+          </h2>
+          <h3>
+            Interaction & Experience Designer
+          </h3>
+        </div>
+      </div>
+      <p className="summary">
+      I'm a Seattle-based designer and strategy consultant from México. I'm focused on ideation through prototype-driven design.
       </p>
     </div>
   )

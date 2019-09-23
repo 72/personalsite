@@ -69,8 +69,18 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 20px;
-  max-width: 530px;
+  max-width: 720px;
   margin: 90px auto 100px;
+  align-items: center;
+}
+
+.detailedInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 720px;
+  /* margin: 90px auto 100px; */
+  align-items: center;
 }
 
 .introInfo div:first-child{
@@ -78,7 +88,7 @@ nav a:hover {
 }
 
 .introInfo img{
-  max-width: 90px;
+  max-width: 300px;
   margin: 0;
 }
 
