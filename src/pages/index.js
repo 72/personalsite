@@ -188,24 +188,22 @@ function LeftPanel(props){
 
 function Post(props){
   return (
-    <div>
-      <Link to={props.link} className="post">
-          <div>
-            <small
-              style={{
-                opacity: 0.75,
-              }}
-            >
-              {props.type}
-            </small>
-            <h2>{props.title}</h2>
-            <p>Read more →</p>
-          </div>
-          <div>
-            {props.image ? <img src={props.image} alt={props.label} /> : null}
-          </div>
-      </Link>
-    </div>
+    <Link to={props.link} className="post">
+      <div>
+        {props.image ? <img src={props.image} alt={props.label} /> : null}
+      </div>
+      <div>
+        <small
+          style={{
+            opacity: 0.75,
+          }}
+        >
+          {props.type}
+        </small>
+        <h2>{props.title}</h2>
+        <p>Read more →</p>
+      </div>
+    </Link>
   )
 }
 
@@ -214,6 +212,9 @@ function PostOutside(props) {
     <div>
       <a href={props.linkTo} target="_blank" className="post">
         <div>
+          {props.image ? <img src={props.image} alt={props.label} /> : null}
+        </div>
+				<div>
           <small
             style={{
               opacity: 0.75,
@@ -223,9 +224,6 @@ function PostOutside(props) {
           </small>
           <h2>{props.title}</h2>
           <p>Go to Demo →</p>
-        </div>
-        <div>
-          {props.image ? <img src={props.image} alt={props.label} /> : null}
         </div>
       </a>
     </div>

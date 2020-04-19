@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.333333333;
   margin-bottom: 0.666666666em;
 }
@@ -128,11 +128,11 @@ nav a:hover {
 
 .post{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 0 auto 100px;
-  text-align: right;
+  text-align: left;
   text-decoration: none;
   color: #222;
   transition: all 0.2s;
@@ -371,7 +371,6 @@ footer{
 
   .post div:first-child{
     text-align: left;
-    grid-row: 2;
   }
 
   .gridSection, .gridSectionType2 {
