@@ -22,99 +22,89 @@ import lottie from "../images/work/lottie.jpg"
 
 
 
+
+
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <IntroductionUpdate />
+    <Intro />
 
-    <a name="work"></a>
-    <LeftPanel title="Work">
-      <p>
-        I believe in portfolios, but I don't share Disney related work online.
-      </p>
-      <p>
-        This is a list of experiments I’ve done to either explore solutions on
-        Disney projects, or to provide assets and modules to the mobile apps
-        prototyping community.
-      </p>
-    </LeftPanel>
+    <ProjectModule 
+      client="Disney"
+      title="InApp Videos"
+      role="Product designer"
+      description="A feature in Disney World & Disneyland apps that serves as a channel to promote offers and reconnect with Guests after their vacation."
 
-    <Post
-      image={lottie}
-      type="Github Repo & Prototype"
-      title="Module: Lottie for Framer"
-      link="lottie-for-framer"
+      image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/inappvideo.png"
+      device="iPhone11"
     />
 
-    <Post
-      image={layered}
-      type="Github Repo & Prototype"
-      title="Module: Sticky Headers for Framer"
-      link="sticky-headers"
+    <ProjectModule 
+      client="Disney"
+      title="Digital Key"
+      role="Lead interaction designer"
+      description="Digital Key allows Guests staying at Disney Resorts to skip the front desk and unlock their room & common area doors (ie. fitness centers, club level lounges)."
+      ctaLabel="View Official Announcement"
+      ctaLink="https://www.youtube.com/watch?v=pv3TrttXOh8&feature=youtu.be"
+
+      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/DKHBhq.mp4"
+      device="iPhone11"
     />
 
-    <PostOutside
-      image={svgAnim}
-      type="Codepen Demo"
-      title="SVG Animation: Google I/O16 countdown"
-      linkTo="http://codepen.io/72mena/pen/dMqbZp"
+    <ProjectModule 
+      client="Disney"
+      title="Message Center"
+      role="Lead interaction designer"
+      description="A feature in the Disney World app where Guests can read all notifications and messages relevant to their vacation."
+
+      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/messageCenter.mp4"
+      device="iPhone11"
     />
 
-    <PostOutside
-      image={sequence}
-      type="Minigame"
-      title="Sequence Minigame"
-      linkTo="http://setentaydos.com/sequence/"
+    <ProjectModule 
+      client="Disney"
+      title="Conversational UI"
+      role="Lead interaction designer"
+      description="Special request to design and prototype a Conversational UI experience for the Disney World and Disneyland apps. Research and testing done with a prototype that handled text and voice input."
+
+      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/cuiDemo.mp4"
+      device="iPhone8"
     />
 
+    <ProjectModule 
+      client="Disney"
+      title="Hi-Fi Prototyping Framework"
+      role="Designer & Developer"
+      description="Internal prototyping framework for Disney Parks & Resorts. Created on top of Framer back in 2016, based in CoffeeScript and JavaScript."
 
-    <a name="writing" />
-    <LeftPanel title="Writing">
-      <p>I like to share what I learn.</p>
-      <p>
-        Writing helps me improve my focus and thinking. English is not my first
-        language, so this exercise is a worthwhile multi-layered challenge to
-        me.
-      </p>
-    </LeftPanel>
-
-    <Post
-      image={uxsettings}
-      type="Analysis"
-      title="The UX of Mobile Settings"
-      link="the-ux-of-mobile-settings"
+      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/partySelect.mp4"
+      device="iPhone8"
     />
 
-    <Post
-      image={keyboard}
-      type="Analysis"
-      title="Android and iOS Keyboard Experiences"
-      link="mobile-keyboard-experiences"
+    <ProjectModule 
+      title="Lottie for Framer"
+      role="Open Source Module"
+      description="I coded a port of AirBnb's Lottie framework into Framer. This module was heavily used at Disney in 2017~2018 to explore motion in prototypes (ie. Disney Play app)."
+      ctaLabel="View GitHub Repo"
+      ctaLink="https://github.com/72/lottie-framer"
+
+      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/lottieFramer.mp4"
+      device="iPhone8"
     />
 
-    <Post
-      image={unlocking}
-      type="Article"
-      title="Unlocking Ideas"
-      link="unlocking-ideas"
+    <ProjectModule
+      client="Globant" 
+      title="Innovation Lab"
+      role="Design Strategist"
+      description="I'm currently leading a remote team of 5 designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives at Globant, and providing this service to selected partners."
     />
 
-    <Post
-      image={layered}
-      type="Article"
-      title="From A to B and Back Again"
-      link="from-a-to-b-and-back-again"
-    />
-
-    <Post
-      image={numbers}
-      type="Article"
-      title="A Change in Motion"
-      link="a-change-in-motion"
-    />
 
     <Contact />
+
   </Layout>
 )
 
@@ -123,112 +113,135 @@ export default IndexPage
 
 // Components
 
-function Introduction(props){
+
+function ProjectDescription(props){
+  return(
+    <div class="info">
+      <div class="project-description">
+        
+        { props.client == "Disney" &&
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/disney.png" width="90" />
+        }
+
+        { props.client == "Globant" &&
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/GlobantLogo.png" width="110" />
+        }
+
+        <h1 class="project-title"> { props.title } </h1>
+        <p class="role"> { props.role } </p>
+        <p class="description"> { props.description } </p>
+
+        { props.ctaLabel != null &&
+          <a href={ props.ctaLink } target="_blank"> { props.ctaLabel } </a> 
+        }
+
+      </div>
+    </div>
+  )
+}
+
+function ProjectShowcase(props) {
+
+  let device;
+
+  if(props.device == "iPhone11") {
+    device = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/deviceiOS72.png"
+  }
+
+  if(props.device == "iPhone8") {
+    device = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/devicei8.png"
+  }
+
+  return(
+    <div class="showcase">
+      <div class="project-demo">
+        <div class="bg-box"> </div>
+
+        <div class="device">
+
+          { props.image != null &&
+            <img class="iphone11img" src={ props.image } />
+          }
+
+          { props.video != null &&
+            <div dangerouslySetInnerHTML={{ __html: `
+              <video
+                loop
+                muted
+                autoPlay
+                playsinline
+                src="${props.video}"
+                class="${props.device}"
+              />,
+            ` }}></div>
+          }
+
+          <img class="deviceFrame" src={device} />
+
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+function ProjectModule(props){
+  return(
+    <div class="module">
+
+      <ProjectDescription
+        client={ props.client }
+        title={ props.title }
+        role={ props.role }
+        description={ props.description }
+        ctaLabel={ props.ctaLabel }
+        ctaLink={ props.ctaLink }
+      />
+
+      { props.device != null &&
+        <ProjectShowcase 
+          image={ props.image }
+          video={ props.video }
+          device={ props.device }
+        />
+      }
+
+    </div>
+  )
+}
+
+
+
+function Intro(props){
   return (
     <div>
-      <div className="introInfo">
+
+      <div class="header-intro">
         <div>
-          <img src={avatar72} alt={"Avatar"} />
+          <img class="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/avatar.png" alt="Juan F. Mena Avatar" />
         </div>
-        <div className="mainDescription">
-          <h2>
-            Juan Flores Mena
-          </h2>
-          <h3>
-            Interaction & Experience Designer
-          </h3>
+        <div class="greeting">
+          <div class="greeting-inner">
+            <h1>Juan F. Mena <span>Pronounced like "menu"</span></h1>
+            <h1>I'm a Designer in Seattle</h1>
+          </div>
         </div>
       </div>
-      <p className="summary">
-        At Disney Parks & Resorts I’ve focused on prototype-driven design exploration of mobile apps.
-      </p>
-      <div className="detailedInfo">
-        <p>The output of my work helps teams tell a story to obtain senior leadership buy-in, get a budget approved, align groups across the org, and conduct user testings.</p>
-        <p>For example, I worked with Disney for four years, leading exploration efforts of near-future and speculative features for their Parks & Resorts mobile apps.</p>
-        <p>I hold a bachelor's degree in Design by the UANL (México) and a certificate in Human-Computer Interaction by the MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL).</p>
-      </div>
-    </div>
-  )
-}
 
-function IntroductionUpdate(props){
-  return (
-    <div>
-      <div className="introInfo">
-        <div>
-          <img src={avatar72complete} alt={"Avatar"} />
-        </div>
-        <div className="mainDescription">
-          <h2>
-            Juan Flores Mena
-          </h2>
-          <h3>
-            Interaction & Experience Designer
-          </h3>
-        </div>
+      <div class="intro-description">
+        <p>
+          I'm a consultant of UX, interaction design & strategy initiatives at Globant and Disney.
+        </p>
+        <p>
+          I help teams and executives to pitch their initiatives through storytelling, and to find direction through brainstorming & prototyping when there are high levels of uncertainty.
+        </p>
       </div>
-      <p className="summary">
-      I'm a Seattle-based designer and strategy consultant from México. I'm focused on ideation through prototype-driven design.
-      </p>
+
     </div>
   )
 }
 
 
-function LeftPanel(props){
-  return (
-    <div>
-      <div className="sectionPanel">
-        <h2>{props.title}</h2>
-        {props.children}
-      </div>
-    </div>
-  )
-}
-
-function Post(props){
-  return (
-    <Link to={props.link} className="post">
-      <div>
-        {props.image ? <img src={props.image} alt={props.label} /> : null}
-      </div>
-      <div>
-        <small
-          style={{
-            opacity: 0.75,
-          }}
-        >
-          {props.type}
-        </small>
-        <h2>{props.title}</h2>
-        <p>Read more →</p>
-      </div>
-    </Link>
-  )
-}
-
-function PostOutside(props) {
-  return (
-    <div>
-      <a href={props.linkTo} target="_blank" className="post">
-        <div>
-          {props.image ? <img src={props.image} alt={props.label} /> : null}
-        </div>
-				<div>
-          <small
-            style={{
-              opacity: 0.75,
-            }}
-          >
-            {props.type}
-          </small>
-          <h2>{props.title}</h2>
-          <p>Go to Demo →</p>
-        </div>
-      </a>
-    </div>
-  )
-}
 
 function Contact(props){
   return (

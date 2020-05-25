@@ -27,6 +27,8 @@ const CaseStickyHeaders = () => (
       subtitle="A module to handle sticky headers within scroll components in Framer"
     />
 
+    <Author />
+
     <MidColumn maxWidth="500px">
       <h2>Design Problem</h2>
       <p>

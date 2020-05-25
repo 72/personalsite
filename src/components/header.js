@@ -4,41 +4,21 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        textAlign: "center",
-      }}
-    >
-      <nav
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, auto)",
-          justifyContent: "center",
-          gridColumnGap: "30px",
-          padding: `20px 0 20px`,
-        }}
-      >
-        <Link to="/">Home</Link>
-        <Link to="/#work">Work</Link>
-        <Link to="/#writing">Writing</Link>
-        <a
+    <div class="menu">
+      <div class="nav">
+        <ul>
+          <li><Link to="/">Work</Link></li>
+          <li><Link to="/writing">Writing</Link></li>
+          <li><a
           href="https://twitter.com/72mena"
           target="_blank"
           rel="noopener noreferrer"
         >
           Twitter
-        </a>
-      </nav>
+        </a></li>
+        </ul>
+      </div>
     </div>
-    <hr
-      style={{
-        backgroundColor: "#8E9C8A",
-        opacity: 0.6,
-        margin: 0,
-      }}
-    />
   </header>
 )
 

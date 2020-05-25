@@ -23,6 +23,8 @@ const CaseLottieForFramer = () => (
       subtitle="A module that brings AirBnb's Lottie framework into Framer"
     />
 
+    <Author />
+
     <MidColumn maxWidth="500px">
       <h2>Design Problem</h2>
       <p>
