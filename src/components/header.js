@@ -4,8 +4,8 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div class="menu">
-      <div class="nav">
+    <div className="menu">
+      <div className="nav">
         <ul>
           <li><Link to="/">Work</Link></li>
           <li><Link to="/writing">Writing</Link></li>

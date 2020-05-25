@@ -18,32 +18,11 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
     />,
 
     <script
-
-    // setTimeout () => {
-    //     dangerouslySetInnerHTML={{
-    //         __html: `
-    //             ScrollReveal().reveal(".module", {
-    //             delay:500,
-    //             distance:"80px",
-    //             origin:"bottom",
-    //             duration:1000
-    //             });
-            
-    //             ScrollReveal().reveal(".post", {
-    //             delay:500,
-    //             distance:"80px",
-    //             origin:"bottom",
-    //             duration:1000
-    //             });
-    //             `,
-    //     }}
-    // }, 150);
-
     dangerouslySetInnerHTML={{
         __html: `
         setTimeout(() => {
             ScrollReveal().reveal(".module", {
-            delay:500,
+            delay:350,
             distance:"80px",
             origin:"bottom",
             duration:1000
@@ -52,7 +31,7 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
 
         setTimeout(() => {
             ScrollReveal().reveal(".post", {
-            delay:500,
+            delay:350,
             distance:"80px",
             origin:"bottom",
             duration:1000

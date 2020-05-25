@@ -4,10 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-//Assets
-import avatar72 from "../images/72avatar.png";
-import avatar72complete from "../images/72completeavatar.png";
-
 //Assets - Writing
 import uxsettings from "../images/notepad/uxsettings.jpg";
 import keyboard from "../images/notepad/keyboard.jpg";
@@ -142,7 +138,7 @@ function Post(props){
 function PostOutside(props) {
   return (
     <div>
-      <a href={props.linkTo} target="_blank" className="post">
+      <a href={props.linkTo} target="_blank" rel="noopener noreferrer" className="post">
         <div>
           {props.image ? <img src={props.image} alt={props.label} /> : null}
         </div>
@@ -167,12 +163,12 @@ function Contact(props){
     <div className="contact">
       <p>
         Let's talk. Get in touch:
-        <br /> <a href="mailto:by72mena@gmail.com">Email</a> -{" "}
-        <a href="https://twitter.com/72mena" target="_blank">
+        <br /> <a href="mailto:by72mena@gmail.com" rel="noopener noreferrer">Email</a> -{" "}
+        <a href="https://twitter.com/72mena" target="_blank" rel="noopener noreferrer">
           Twitter
         </a>{" "}
         -{" "}
-        <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank">
+        <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
       </p>

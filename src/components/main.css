@@ -241,7 +241,7 @@ nav a:hover {
 
 .bg-box {
   position: relative;
-  display: box;
+  display: block;
   background-color: rgba(200, 235, 255, 1);
   width: 80%;
   height: 50%;
