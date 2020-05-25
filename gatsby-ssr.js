@@ -5,3 +5,61 @@
  */
 
 // You can delete this file if you're not using it
+
+import React, {useEffect} from 'react'
+
+export const onRenderBody = ({ setPostBodyComponents }) => {
+  setPostBodyComponents([
+    <script
+      key="https://unpkg.com/scrollreveal"
+      src="https://unpkg.com/scrollreveal"
+      crossOrigin="anonymous"
+      defer
+    />,
+
+    <script
+
+    // setTimeout () => {
+    //     dangerouslySetInnerHTML={{
+    //         __html: `
+    //             ScrollReveal().reveal(".module", {
+    //             delay:500,
+    //             distance:"80px",
+    //             origin:"bottom",
+    //             duration:1000
+    //             });
+            
+    //             ScrollReveal().reveal(".post", {
+    //             delay:500,
+    //             distance:"80px",
+    //             origin:"bottom",
+    //             duration:1000
+    //             });
+    //             `,
+    //     }}
+    // }, 150);
+
+    dangerouslySetInnerHTML={{
+        __html: `
+        setTimeout(() => {
+            ScrollReveal().reveal(".module", {
+            delay:500,
+            distance:"80px",
+            origin:"bottom",
+            duration:1000
+            });
+        }, 350);
+
+        setTimeout(() => {
+            ScrollReveal().reveal(".post", {
+            delay:500,
+            distance:"80px",
+            origin:"bottom",
+            duration:1000
+            });
+        }, 350);
+            `,
+    }}
+    />
+  ])
+}

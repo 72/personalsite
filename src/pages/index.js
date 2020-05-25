@@ -244,19 +244,22 @@ function Intro(props){
 
 
 function Contact(props){
+
   return (
-    <div className="contact">
-      <p>
-        Let's talk. Get in touch:
-        <br /> <a href="mailto:by72mena@gmail.com">Email</a> -{" "}
-        <a href="https://twitter.com/72mena" target="_blank">
-          Twitter
-        </a>{" "}
-        -{" "}
-        <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank">
-          LinkedIn
-        </a>
-      </p>
-    </div>
+    <>
+      <div className="contact">
+        <p>
+          Let's talk. Get in touch:
+          <br /> <a href="mailto:by72mena@gmail.com">Email</a> -{" "}
+          <a href="https://twitter.com/72mena" target="_blank">
+            Twitter
+          </a>{" "}
+          -{" "}
+          <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank">
+            LinkedIn
+          </a>
+        </p>
+      </div>
+    </>
   )
 }
