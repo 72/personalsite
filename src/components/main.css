@@ -28,7 +28,8 @@ body {
 
 a{
   /* color: #c13cff; */
-  color: #009AFA;
+  /* color: #009AFA; */
+  color: #cc00ff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -511,6 +512,7 @@ nav a:hover {
   transition: all 0.2s;
 }
 
+
 .post img{
   border: 1px solid #dadada;
   border-radius: 16px;
@@ -533,7 +535,8 @@ nav a:hover {
 }
 
 .post:hover p{
-  color: #009AFA;
+  /* color: #009AFA; */
+  color: #cc00ff;
 }
 
 
