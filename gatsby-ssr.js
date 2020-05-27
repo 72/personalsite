@@ -22,19 +22,21 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
         __html: `
         setTimeout(() => {
             ScrollReveal().reveal(".module", {
-            delay:350,
+            delay:150,
             distance:"80px",
             origin:"bottom",
-            duration:1000
+            duration:1000,
+            viewFactor: 0.33
             });
         }, 350);
 
         setTimeout(() => {
             ScrollReveal().reveal(".post", {
-            delay:350,
+            delay:150,
             distance:"80px",
             origin:"bottom",
-            duration:1000
+            duration:1000,
+            viewFactor: 0.33
             });
         }, 350);
             `,
