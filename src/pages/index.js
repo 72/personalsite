@@ -24,7 +24,7 @@ const IndexPage = () => (
       client="Disney"
       title="Digital Key"
       position="Lead interaction designer"
-      description="Digital Key allows Guests staying at Disney Resorts to skip the front desk and unlock their room & common area doors (ie. fitness centers, club level lounges)."
+      description="Digital Key enhances the Direct-to-Room experience of Guests staying at Disney Resorts. Unlocks the Guest's room & common area doors (ie. fitness centers, club level lounges)."
       ctaLabel="View Official Announcement"
       ctaLink="https://www.youtube.com/watch?v=pv3TrttXOh8&feature=youtu.be"
 
@@ -208,7 +208,7 @@ function Intro(props){
 
       <div className="intro-description">
         <p>
-          I'm a consultant of UX, interaction design & strategy initiatives at Globant and Disney.
+          I'm a consultant of interaction design and strategy initiatives at Globant and Disney.
         </p>
         <p>
           I help teams and executives to pitch their initiatives through storytelling, and to find direction through brainstorming & prototyping when there are high levels of uncertainty.
