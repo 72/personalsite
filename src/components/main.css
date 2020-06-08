@@ -176,6 +176,20 @@ nav a:hover {
   margin: 0;
 }
 
+.resume {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 24px;
+  border: 1px solid #777;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.resume:hover {
+  border: 1px solid rgb(230, 100, 255);
+}
+
+
 
 /* Work Update */
 

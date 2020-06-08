@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
+//Assets
+// import resume from "../../static/Resume-Juan-Flores-Mena.pdf"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -208,11 +211,12 @@ function Intro(props){
 
       <div className="intro-description">
         <p>
-          I'm a consultant of interaction design and strategy initiatives at Globant and Disney.
+          I'm a consultant of interaction design and strategy initiatives at Globant
         </p>
         <p>
-          I help teams and executives to pitch their initiatives through storytelling, and to find direction through brainstorming & prototyping when there are high levels of uncertainty.
+        I help teams and executives pitch initiatives through storytelling, and find direction among uncertainty through brainstorming & prototyping.
         </p>
+        <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a>
       </div>
 
     </div>
