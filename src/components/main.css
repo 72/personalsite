@@ -338,13 +338,13 @@ nav a:hover {
   border: 1px solid rgb(230, 100, 255);
 }
 
-.module:hover .bg-box {
+.showcase:hover .bg-box {
   width: 100%;
   height: 80%;
   background-color: rgba(230, 245, 255, 0.8);
 }
 
-.module:hover .project-demo .device {
+.showcase:hover .project-demo .device {
   transform: scale(1.06) translateX(-47%);
   filter: drop-shadow(0px 10px 10px rgba(0, 10, 155, 0.3));
 }
@@ -379,7 +379,7 @@ nav a:hover {
     min-width: 290px;
   }
 
-  .module:hover .bg-box {
+  .showcase:hover .bg-box {
     width: 65%;
   }
 

@@ -35,7 +35,7 @@ const IndexPage = () => (
       device="iPhone11"
     />
 
-    <ProjectModule 
+    {/* <ProjectModule 
       client="Disney"
       title="Message Center"
       position="Lead interaction designer"
@@ -43,7 +43,7 @@ const IndexPage = () => (
 
       video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/messageCenter.mp4"
       device="iPhone11"
-    />
+    /> */}
 
     <ProjectModule 
       client="Disney"
@@ -80,7 +80,7 @@ const IndexPage = () => (
       client="Globant" 
       title="Innovation Lab"
       position="Design Strategist"
-      description="I'm currently leading a remote team of 5 designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives at Globant, and providing this service to selected partners."
+      description="I'm currently leading a remote team of designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives at Globant, and providing this service to selected partners."
     />
 
 
