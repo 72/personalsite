@@ -168,7 +168,7 @@ function ProjectShowcase(props) {
 
 function ProjectModule(props){
   return(
-    <div className="module">
+    <div className={props.device ? 'module' : 'one-module'}>
 
       <ProjectDescription
         client={ props.client }
@@ -194,6 +194,22 @@ function ProjectModule(props){
 
 
 function Intro(props){
+  return (
+    <div>
+
+      <div className="intro-description">
+        <h5>JUAN F. MENA <span>Pronounced like "menu"</span></h5>
+        <p>
+          Design and Strategy at Globant. <br/>I work with teams to win funding through brainstorming and prototyping.
+        </p>
+        <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a>
+      </div>
+
+    </div>
+  )
+}
+
+function Intro_Backup(props){
   return (
     <div>
 

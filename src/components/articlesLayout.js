@@ -21,9 +21,9 @@ export function Author(props) {
       <div>
         <h3>Juan Flores Mena</h3>
         <p>
-          Interaction & Experience Designer
+          Design & Strategy Consultant
           <br />
-          Based in Seattle, WA
+          <a href="https://twitter.com/72mena" target="_blank" rel="noopener noreferrer">@72mena</a>
         </p>
       </div>
     </div>

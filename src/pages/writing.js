@@ -22,14 +22,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <LeftPanel title="Writing">
+    <div className="intro-description writing">
+      <h5>WRITING</h5>
       <p>I like to share what I learn.</p>
-      <p>
-        Writing helps me improve my focus and thinking. English is not my first
-        language, so this exercise is a worthwhile multi-layered challenge to
-        me.
+      <p>Writing helps me improve my focus and thinking. English is not my first language, so this exercise is a worthwhile multi-layered challenge to me.
       </p>
-    </LeftPanel>
+    </div>
 
     <Post
       image={numbers}

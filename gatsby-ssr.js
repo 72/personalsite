@@ -9,7 +9,7 @@
 import React, {useEffect} from 'react'
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
-  setPostBodyComponents([
+  return setPostBodyComponents([
     <script
       key="https://unpkg.com/scrollreveal"
       src="https://unpkg.com/scrollreveal"
