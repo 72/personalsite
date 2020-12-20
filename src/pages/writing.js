@@ -12,6 +12,7 @@ import layered from "../images/notepad/layered.jpg"
 import numbers from "../images/notepad/numbers.jpg"
 import castle from "../images/notepad/castle.jpeg"
 import fff from "../images/notepad/fff__.png"
+import mtgcards from "../images/notepad/mtgcards.jpg"
 
 //Assets - Work
 import svgAnim from "../images/work/svgAnim.png"
@@ -32,6 +33,14 @@ const IndexPage = () => (
       </p>
     </div>
 
+    <PostOutside
+      image={mtgcards}
+      type="Article"
+      title="Training a machine learning model to recognize Magic: The Gathering cards"
+      linkTo="https://uxdesign.cc/training-a-machine-learning-model-to-recognize-magic-the-gathering-cards-2708c1525926"
+      linkLabel="Read more →"
+    />
+    
     <PostOutside
       image={castle}
       type="Article"
@@ -120,17 +129,6 @@ const IndexPage = () => (
 export default IndexPage
 
 // Components
-
-function LeftPanel(props) {
-  return (
-    <div>
-      <div className="sectionPanel">
-        <h2>{props.title}</h2>
-        {props.children}
-      </div>
-    </div>
-  )
-}
 
 function Post(props) {
   return (

@@ -209,37 +209,6 @@ function Intro(props){
   )
 }
 
-function Intro_Backup(props){
-  return (
-    <div>
-
-      <div className="header-intro">
-        <div>
-          <img className="avatar" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/avatar.png" alt="Juan F. Mena Avatar" />
-        </div>
-        <div className="greeting">
-          <div className="greeting-inner">
-            <h1>Juan F. Mena <span>Pronounced like "menu"</span></h1>
-            <h1>I'm a Designer in Seattle</h1>
-          </div>
-        </div>
-      </div>
-
-      <div className="intro-description">
-        <p>
-          I'm a consultant of interaction design and strategy initiatives at Globant
-        </p>
-        <p>
-        I help teams and executives pitch initiatives through storytelling, and find direction among uncertainty through brainstorming & prototyping.
-        </p>
-        <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a>
-      </div>
-
-    </div>
-  )
-}
-
-
 
 function Contact(props){
 
