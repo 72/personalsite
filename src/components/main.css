@@ -765,6 +765,10 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  .googleImage {
+    max-width: 100%;
+  }
+
   .introInfo {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 0;
