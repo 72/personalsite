@@ -5,13 +5,16 @@ import SEO from "../components/seo"
 
 
 //Assets
-// import resume from "../../static/Resume-Juan-Flores-Mena.pdf"
+import googleIllustration from "../images/work/gdraw.jpg"
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
     <Intro />
+
+    <p className="previousWork">My previous projects at Disney and Globant </p>
 
     <ProjectModule 
       client="Disney"
@@ -80,7 +83,7 @@ const IndexPage = () => (
       client="Globant" 
       title="Innovation Lab"
       position="Design Strategist"
-      description="I'm currently leading a remote team of designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives at Globant, and providing this service to selected partners."
+      description="Design Strategy at Globant. I led a remote team of designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives, and providing this service to selected partners."
     />
 
 
@@ -198,11 +201,12 @@ function Intro(props){
     <div>
 
       <div className="intro-description">
-        <h5>JUAN F. MENA <span>Pronounced like "menu"</span></h5>
+        <h5>JUAN F. MENA<br/><span>Pronounced like "menu"</span></h5>
+        <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
         <p>
-          Design and Strategy at Globant. <br/>I work with teams to win funding through brainstorming and prototyping.
+          I joined Google as Interaction Designer 🎉
         </p>
-        <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a>
+        {/* <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a> */}
       </div>
 
     </div>
