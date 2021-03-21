@@ -25,12 +25,7 @@ const IndexPage = () => (
 
     <div className="intro-description writing">
       <h5>WRITING</h5>
-      <p>I like to share what I learn.</p>
-      <p>
-        Writing helps me improve my focus and thinking. English is not my first
-        language, so this exercise is a worthwhile multi-layered challenge to
-        me.
-      </p>
+      <p>Writing helps me improve my focus and thinking,<br/>and I like to share what I learn.</p>
     </div>
 
     <PostOutside

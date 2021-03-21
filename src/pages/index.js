@@ -202,10 +202,17 @@ function Intro(props){
 
       <div className="intro-description">
         <h5>JUAN F. MENA<br/><span>Pronounced like "menu"</span></h5>
-        <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
+        {/* <p>
+          I'm an Interaction Designer<br/>
+          Currently at Google 
+        </p> */}
         <p>
-          I joined Google as Interaction Designer 🎉
+          Interaction Design and Strategy
         </p>
+        <div>
+        <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
+        </div>
+        <small>Currently at Google</small>
         {/* <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a> */}
       </div>
 
