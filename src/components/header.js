@@ -9,13 +9,14 @@ const Header = ({ siteTitle }) => (
         <ul>
           <li><Link to="/">Work</Link></li>
           <li><Link to="/writing">Writing</Link></li>
-          <li><a
+          <li><Link to="/drawings">Drawings</Link></li>
+          {/* <li><a
           href="https://twitter.com/72mena"
           target="_blank"
           rel="noopener noreferrer"
         >
           Twitter
-        </a></li>
+        </a></li> */}
         </ul>
       </div>
     </div>
