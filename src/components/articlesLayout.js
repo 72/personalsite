@@ -21,9 +21,9 @@ export function Author(props) {
       <div>
         <h3>Juan Flores Mena</h3>
         <p>
-          Design & Strategy Consultant
+          Product Design & Prototyping
           <br />
-          <a href="https://twitter.com/72mena" target="_blank" rel="noopener noreferrer">@72mena</a>
+          <a href="https://www.threads.net/@72mena" target="_blank" rel="noopener noreferrer">@72mena</a>
         </p>
       </div>
     </div>

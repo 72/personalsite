@@ -91,11 +91,11 @@ function Contact(props) {
         </a>{" "}
         -{" "}
         <a
-          href="https://twitter.com/72mena"
+          href="https://www.threads.net/@72mena"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Twitter
+          Threads
         </a>{" "}
         -{" "}
         <a

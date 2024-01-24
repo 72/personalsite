@@ -56,49 +56,49 @@ const IndexPage = () => (
       image={numbers}
       type="Article"
       title="A Change in Motion"
-      link="a-change-in-motion"
+      link="/a-change-in-motion"
     />
 
     <Post
       image={uxsettings}
       type="Analysis"
       title="The UX of Mobile Settings"
-      link="the-ux-of-mobile-settings"
+      link="/the-ux-of-mobile-settings"
     />
 
     <Post
       image={keyboard}
       type="Analysis"
       title="Android and iOS Keyboard Experiences"
-      link="mobile-keyboard-experiences"
+      link="/mobile-keyboard-experiences"
     />
 
     <Post
       image={unlocking}
       type="Article"
       title="Unlocking Ideas"
-      link="unlocking-ideas"
+      link="/unlocking-ideas"
     />
 
     <Post
       image={layered}
       type="Article"
       title="From A to B and Back Again"
-      link="from-a-to-b-and-back-again"
+      link="/from-a-to-b-and-back-again"
     />
 
     <Post
       image={lottie}
       type="Github Repo & Prototype"
       title="Module: Lottie for Framer"
-      link="lottie-for-framer"
+      link="/lottie-for-framer"
     />
 
     <Post
       image={layered}
       type="Github Repo & Prototype"
       title="Module: Sticky Headers for Framer"
-      link="sticky-headers"
+      link="/sticky-headers"
     />
 
     <PostOutside
@@ -106,14 +106,6 @@ const IndexPage = () => (
       type="Codepen Demo"
       title="SVG Animation: Google I/O16 countdown"
       linkTo="http://codepen.io/72mena/pen/dMqbZp"
-      linkLabel="Go to Demo →"
-    />
-
-    <PostOutside
-      image={sequence}
-      type="Minigame"
-      title="Sequence Minigame"
-      linkTo="http://setentaydos.com/sequence/"
       linkLabel="Go to Demo →"
     />
 
@@ -185,11 +177,11 @@ function Contact(props) {
         </a>{" "}
         -{" "}
         <a
-          href="https://twitter.com/72mena"
+          href="https://www.threads.net/@72mena"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Twitter
+          Threads
         </a>{" "}
         -{" "}
         <a

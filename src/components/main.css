@@ -159,7 +159,7 @@ nav a:hover {
 
 .intro-description {
   max-width: 640px;
-  margin: 150px auto 200px;
+  margin: 50px auto 40px;
   font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -190,9 +190,15 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
+.currentWork {
+	text-align: center;
+	color: #666;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
 .previousWork {
   text-align: center;
-  /* padding-left: 20px; */
   margin-bottom: 120px;
   color: #666;
   font-size: 1.2em;

@@ -14,7 +14,8 @@ const IndexPage = () => (
 
     <Intro />
 
-    <p className="previousWork">My previous projects at Disney and Globant </p>
+    <p className="currentWork">– I'm currently at Google –</p>
+	<p className="previousWork">Check my previous work at Disney and Globant</p>
 
     <ProjectModule 
       client="Disney"
@@ -202,17 +203,13 @@ function Intro(props){
 
       <div className="intro-description">
         <h5>JUAN F. MENA<br/><span>Pronounced like "menu"</span></h5>
-        {/* <p>
-          I'm an Interaction Designer<br/>
-          Currently at Google 
-        </p> */}
         <p>
-          Interaction Design and Strategy
+          Product Design & Prototyping
         </p>
         <div>
         <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
         </div>
-        <small>Currently at Google</small>
+        {/* <small>Currently at Google</small> */}
         {/* <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a> */}
       </div>
 
@@ -229,8 +226,8 @@ function Contact(props){
         <p>
           Let's talk. Get in touch:
           <br /> <a href="mailto:by72mena@gmail.com" rel="noopener noreferrer">Email</a> -{" "}
-          <a href="https://twitter.com/72mena" target="_blank" rel="noopener noreferrer">
-            Twitter
+          <a href="https://www.threads.net/@72mena" target="_blank" rel="noopener noreferrer">
+            Threads
           </a>{" "}
           -{" "}
           <a href="https://www.linkedin.com/in/jlfloresmena/" target="_blank" rel="noopener noreferrer">
