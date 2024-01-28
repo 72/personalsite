@@ -61,17 +61,6 @@ h3 {
 
 /* Nav */
 
-/* nav a {
-  text-decoration: none;
-  color: #222;
-  border-bottom: 2px solid #FFF;
-  transition: all 0.2s;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #009AFA;
-} */
-
 .menu {
   display: grid;
   grid-template-columns: 1fr;
@@ -89,13 +78,24 @@ nav a:hover {
 .nav ul {
   padding: 0;
   margin: 0 auto;
-  display: block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav li {
   padding: 0;
   margin: 0 25px;
   display: inline-block;
+}
+
+.icon-social {
+	width: 32px;
+	height: auto;
+	margin-top: 5px;
+}
+
+.icon-social:hover svg {
+	fill: #cc00ff;
 }
 
 .menu a {
@@ -147,47 +147,56 @@ nav a:hover {
   color: #727272;
 }
 
-.greeting {
-  position: relative;
-}
-
-.greeting-inner {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.spacer{
+	display: block;
+	height: 80px;
 }
 
 .intro-description {
   max-width: 640px;
-  margin: 50px auto 40px;
+  margin: 0 auto 156px;
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.3;
-  text-align: center;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 72px;
 }
 
-.intro-description.writing {
-  font-size: 1.6rem;
+.intro-summary{
+	text-align: center;
+	color: #666;
+	font-size: 1.2em;
+	line-height: 145%;
 }
 
-.intro-description h5 {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 32px;
-  line-height: 1.2;
+.intro-avatar{
+	width: 140px;
+	height: auto;
 }
 
-.intro-description h5 span {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.2;
+.intro-personal{
+	display: inline-flex;
+	align-items: center;
+	gap: 24px;
+	margin: 0 auto;
 }
 
-.intro-description p:nth-child(2) {
-  margin-bottom: 40px;
+.intro-personal img{
+	margin: 0;
+}
+
+.intro-personal p{
+	line-height: 140%;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+.intro-name{
+	font-weight: bold;
+}
+
+.intro-role{
+	color: #333;
 }
 
 .currentWork {
@@ -567,7 +576,7 @@ nav a:hover {
 
 .post {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.75fr;
   grid-gap: 15px;
   /* max-width: 700px; */
   margin: 0 auto 100px;
@@ -575,6 +584,10 @@ nav a:hover {
   text-decoration: none;
   color: #222;
   transition: all 0.2s;
+}
+
+.post small{
+	text-transform: uppercase;
 }
 
 .post img {
@@ -598,7 +611,7 @@ nav a:hover {
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.post:hover p {
+.post:hover h2{
   /* color: #009AFA; */
   color: #cc00ff;
 }
@@ -827,6 +840,26 @@ footer {
 
   .introInfo div:first-child {
     text-align: center;
+  }
+
+  .intro-description{
+	margin: 0 auto 72px;
+	gap: 48px;
+  }
+
+  .intro-personal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+  }
+
+  .intro-name{
+	text-align: center;
+  }
+
+  .intro-role{
+	text-align: center;
   }
 
   .mainDescription {

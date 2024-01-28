@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 
 //Assets
+import avatar72 from "../images/self/avatar.png"
 import googleIllustration from "../images/work/gdraw.jpg"
 
 
@@ -13,9 +14,6 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <Intro />
-
-    <p className="currentWork">– I'm currently at Google –</p>
-	<p className="previousWork">Check my previous work at Disney and Globant</p>
 
     <ProjectModule 
       client="Disney"
@@ -202,13 +200,28 @@ function Intro(props){
     <div>
 
       <div className="intro-description">
-        <h5>JUAN F. MENA<br/><span>Pronounced like "menu"</span></h5>
-        <p>
-          Product Design & Prototyping
-        </p>
-        <div>
-        <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
-        </div>
+
+		<div className="intro-personal">
+			<div>
+				<img className="intro-avatar" src={avatar72} alt={"Personal photo"} />
+			</div>
+			<div>
+				<p className="intro-name">JUAN FLORES MENA</p>
+				<p className="intro-role">Product Design & Prototyping</p>				
+			</div>
+		</div>
+
+		<div>
+			<p className="intro-summary">Currently at Google.
+			<br/>I'm designing mobile tools for video creators at YouTube Shorts. 
+			<br/>Check out my previous work at Disney and Globant:</p>
+		</div>
+
+
+
+        {/* <div>
+	        <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
+        </div> */}
         {/* <small>Currently at Google</small> */}
         {/* <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a> */}
       </div>

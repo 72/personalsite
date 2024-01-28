@@ -23,14 +23,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="intro-description writing">
-      <h5>WRITING</h5>
-      <p>Writing helps me improve my focus and thinking,<br/>and I like to share what I learn.</p>
-    </div>
+	<div className="spacer"></div>
 
     <PostOutside
       image={mtgcards}
-      type="Article"
+      type="Medium article"
       title="Training a machine learning model to recognize Magic: The Gathering cards"
       linkTo="https://uxdesign.cc/training-a-machine-learning-model-to-recognize-magic-the-gathering-cards-2708c1525926"
       linkLabel="Read more →"
@@ -38,19 +35,19 @@ const IndexPage = () => (
     
     <PostOutside
       image={castle}
-      type="Article"
+      type="Medium article"
       title="What I learned about prototyping after four years at Disney"
       linkTo="https://uxdesign.cc/what-i-learned-about-prototyping-after-four-years-at-disney-5bfe1fa6a3ac"
       linkLabel="Read more →"
     />
 
-    <PostOutside
+    {/* <PostOutside
       image={fff}
       type="Newsletter"
       title="FFFUTURES – Notes on speculative futures and extended realities"
       linkTo="https://fffutures.substack.com/"
       linkLabel="Open space →"
-    />
+    /> */}
 
     <Post
       image={numbers}
@@ -61,14 +58,14 @@ const IndexPage = () => (
 
     <Post
       image={uxsettings}
-      type="Analysis"
+      type="Article"
       title="The UX of Mobile Settings"
       link="/the-ux-of-mobile-settings"
     />
 
     <Post
       image={keyboard}
-      type="Analysis"
+      type="Article"
       title="Android and iOS Keyboard Experiences"
       link="/mobile-keyboard-experiences"
     />
@@ -117,12 +114,62 @@ export default IndexPage
 
 // Components
 
+// Backup component
+// function Post(props) {
+// 	return (
+// 	  <Link to={props.link} className="post">
+// 		<div>
+// 		  {props.image ? <img src={props.image} alt={props.label} /> : null}
+// 		</div>
+// 		<div>
+// 		  <small
+// 			style={{
+// 			  opacity: 0.75,
+// 			}}
+// 		  >
+// 			{props.type}
+// 		  </small>
+// 		  <h2>{props.title}</h2>
+// 		  <p>Read more →</p>
+// 		</div>
+// 	  </Link>
+// 	)
+//   }
+// function PostOutside(props) {
+// 	return (
+// 	  <div>
+// 		<a
+// 		  href={props.linkTo}
+// 		  target="_blank"
+// 		  rel="noopener noreferrer"
+// 		  className="post"
+// 		>
+// 		  <div>
+// 			{props.image ? <img src={props.image} alt={props.label} /> : null}
+// 		  </div>
+// 		  <div>
+// 			<small
+// 			  style={{
+// 				opacity: 0.75,
+// 			  }}
+// 			>
+// 			  {props.type}
+// 			</small>
+// 			<h2>{props.title}</h2>
+// 			<p>{props.linkLabel}</p>
+// 		  </div>
+// 		</a>
+// 	  </div>
+// 	)
+//   }
+
+
 function Post(props) {
   return (
     <Link to={props.link} className="post">
-      <div>
+      {/* <div>
         {props.image ? <img src={props.image} alt={props.label} /> : null}
-      </div>
+      </div> */}
       <div>
         <small
           style={{
@@ -132,7 +179,6 @@ function Post(props) {
           {props.type}
         </small>
         <h2>{props.title}</h2>
-        <p>Read more →</p>
       </div>
     </Link>
   )
@@ -147,9 +193,9 @@ function PostOutside(props) {
         rel="noopener noreferrer"
         className="post"
       >
-        <div>
+        {/* <div>
           {props.image ? <img src={props.image} alt={props.label} /> : null}
-        </div>
+        </div> */}
         <div>
           <small
             style={{
@@ -159,7 +205,7 @@ function PostOutside(props) {
             {props.type}
           </small>
           <h2>{props.title}</h2>
-          <p>{props.linkLabel}</p>
+          {/* <p>{props.linkLabel}</p> */}
         </div>
       </a>
     </div>
