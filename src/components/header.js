@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       <div className="nav">
         <ul>
           <li><Link to="/">Work</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/notes">Notes</Link></li>
           {/* <li><Link to="/drawings">Drawings</Link></li> */}
           <li><a href="https://www.threads.net/@72mena" target="_blank" rel="noopener noreferrer">
 			<div className="icon-social">

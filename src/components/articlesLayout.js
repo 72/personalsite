@@ -30,6 +30,20 @@ export function Author(props) {
   )
 }
 
+export function Subscribe(props){
+	return(
+		<div className="notesSubscribe">
+			<iframe 
+			src="https://72mena.substack.com/embed" 
+			width="480" 
+			height="250" 
+			style={{ border: '1px solid #EEE', background: 'white', borderRadius: '12px' }} 
+			>
+			</iframe>
+		</div>
+	)
+}
+
 /** 
  * 1 main core column of text, off-centered, with white space to the sides.
  * Use this for the main content, and consider the side notes attribute as needed.

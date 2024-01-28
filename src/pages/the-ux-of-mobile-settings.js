@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { PostTitle, Author, GridType2, GridType3, GridType4, MidColumn, Spacer } from '../components/articlesLayout'
+import { PostTitle, Author, GridType2, GridType3, GridType4, MidColumn, Spacer, Subscribe } from '../components/articlesLayout'
 
 
 //Assets
@@ -317,6 +317,7 @@ const ArticleUXPage = () => (
     </MidColumn>
 
     <Spacer />
+	<Subscribe />
   </Layout>
 )
 

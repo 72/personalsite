@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Subscribe } from '../components/articlesLayout'
 
 //Assets - Writing
 import uxsettings from "../images/notepad/uxsettings.jpg"
@@ -23,7 +24,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-	<div className="spacer"></div>
+	<Subscribe />
 
     <PostOutside
       image={mtgcards}

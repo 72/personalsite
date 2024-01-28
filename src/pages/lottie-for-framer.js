@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { PostTitle, Author, MidColumn, Spacer } from '../components/articlesLayout'
+import { PostTitle, Author, MidColumn, Spacer, Subscribe } from '../components/articlesLayout'
 
 
 //Assets
@@ -244,8 +244,7 @@ const CaseLottieForFramer = () => (
     </MidColumn>
 
     <Spacer />
-
-    <Author />
+	<Subscribe />
   </Layout>
 )
 

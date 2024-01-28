@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { PostTitle, Author, MidColumn, Spacer } from '../components/articlesLayout'
+import { PostTitle, Author, MidColumn, Spacer, Subscribe } from '../components/articlesLayout'
 
 
 //Assets
@@ -206,8 +206,7 @@ const CaseStickyHeaders = () => (
     </div>
 
     <Spacer />
-
-    <Author />
+	<Subscribe />
   </Layout>
 )
 

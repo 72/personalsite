@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { PostTitle, Author, GridType2, MidColumn, Spacer } from '../components/articlesLayout'
+import { PostTitle, Author, GridType2, MidColumn, Spacer, Subscribe } from '../components/articlesLayout'
 
 //Assets
 import numbers from "../images/post-assets/change-in-motion/numbers.jpeg"
@@ -474,6 +474,8 @@ const ArticleChangeInMotion = () => (
     </MidColumn>
 
     <Spacer />
+
+	<Subscribe />
   </Layout>
 )
 

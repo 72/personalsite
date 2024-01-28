@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { PostTitle, Author, GridType2, MidColumn, Spacer } from '../components/articlesLayout'
+import { PostTitle, Author, GridType2, MidColumn, Spacer, Subscribe } from '../components/articlesLayout'
 
 
 //Assets
@@ -369,6 +369,7 @@ const ArticleFromAtoB = () => (
     </MidColumn>
 
     <Spacer />
+	<Subscribe />
   </Layout>
 )
 
