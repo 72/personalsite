@@ -18,14 +18,14 @@ light-yellow: #DECC55
 }
 
 html {
-  background-color: #d4badd;
+  /* background-color: #d4badd; */
 }
 
 body {
   color: #222;
   font-family: "IBM Plex Sans", sans-serif;
   background-color: #fff;
-  border: 10px solid #d4badd;
+  /* border: 10px solid #d4badd; */
 }
 
 a {
@@ -177,8 +177,19 @@ h3 {
 .intro-personal{
 	display: inline-flex;
 	align-items: center;
-	gap: 24px;
+	gap: 16px;
 	margin: 0 auto;
+	/* border: 2px solid rgba(0,0,0,0.1); */
+    padding: 16px 48px 14px 16px;
+    border-radius: 60px;
+	background-color: #fff;
+	box-shadow: 0px 0px 25px 0px rgba(255, 0, 255, 0.10), 4px 4px 14px 0px rgba(242, 201, 76, 0.30);
+	transition: all 0.2s ease-in-out;
+}
+
+.intro-personal:hover{
+	box-shadow: -4px -4px 15px 0px rgba(0, 17, 255, 0.1), 2px 2px 14px 0px rgba(140, 242, 76, 0.3);
+	scale: 1.05;
 }
 
 .intro-personal img{
@@ -188,7 +199,7 @@ h3 {
 .intro-personal p{
 	line-height: 140%;
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 .intro-name{
@@ -852,6 +863,14 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+  }
+
+  .intro-personal:hover{
+	box-shadow: none;
+	scale: 1;
   }
 
   .intro-name{
