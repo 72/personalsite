@@ -36,7 +36,7 @@ export function Subscribe(props){
 			<iframe 
 			src="https://72mena.substack.com/embed" 
 			width="480" 
-			height="250" 
+			height="350" 
 			style={{ border: '1px solid #EEE', background: 'white', borderRadius: '12px' }} 
 			>
 			</iframe>
