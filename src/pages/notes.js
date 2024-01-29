@@ -26,6 +26,13 @@ const IndexPage = () => (
 
 	<Subscribe />
 
+	<PostOutside
+      type="Article"
+      title="Unlocking ideas"
+      linkTo="https://72mena.substack.com/p/unlocking-ideas"
+      linkLabel="Read more →"
+    />
+
     <PostOutside
       image={mtgcards}
       type="Medium article"
@@ -71,12 +78,12 @@ const IndexPage = () => (
       link="/mobile-keyboard-experiences"
     />
 
-    <Post
+    {/* <Post
       image={unlocking}
       type="Article"
       title="Unlocking Ideas"
       link="/unlocking-ideas"
-    />
+    /> */}
 
     <Post
       image={layered}
