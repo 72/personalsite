@@ -28,6 +28,13 @@ const IndexPage = () => (
 
 	<PostOutside
       type="Article"
+      title="Thinking in bullet points"
+      linkTo="https://72mena.substack.com/p/thinking-in-bullet-points"
+      linkLabel="Read more →"
+    />
+
+	<PostOutside
+      type="Article"
       title="Unlocking ideas"
       linkTo="https://72mena.substack.com/p/unlocking-ideas"
       linkLabel="Read more →"
