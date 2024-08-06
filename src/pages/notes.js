@@ -28,6 +28,27 @@ const IndexPage = () => (
 
 	<PostOutside
       type="Article"
+      title="The right prototyping tool for you"
+      linkTo="https://72mena.substack.com/p/the-right-prototyping-tool-for-you"
+      linkLabel="Read more →"
+    />
+	
+	<PostOutside
+      type="Article"
+      title="Give others the chance to help you"
+      linkTo="https://72mena.substack.com/p/give-others-the-chance-to-help-you"
+      linkLabel="Read more →"
+    />
+
+	<PostOutside
+      type="Article"
+      title="An actionable guide to break into Product Design"
+      linkTo="https://72mena.substack.com/p/an-actionable-guide-to-break-into"
+      linkLabel="Read more →"
+    />
+
+	<PostOutside
+      type="Article"
       title="Thinking in bullet points"
       linkTo="https://72mena.substack.com/p/thinking-in-bullet-points"
       linkLabel="Read more →"
