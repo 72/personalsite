@@ -6,6 +6,9 @@ import SEO from "../components/seo"
 
 //Assets
 import avatar72 from "../images/self/avatar.png"
+import ytlogo from "../images/projects/youtubelogo.svg"
+import shortsremix from "../images/projects/shortsremix.png"
+import recomp from "../images/projects/RecompClipHB.mp4"
 import googleIllustration from "../images/work/gdraw.jpg"
 
 
@@ -16,10 +19,32 @@ const IndexPage = () => (
     <Intro />
 
     <ProjectModule 
+      client="YouTube"
+      title="Shorts Remix"
+      position="Product designer"
+      description="Media reuse features in YouTube Shorts. Allows anyone to use the audio or video from other Shorts in their creations."
+      ctaLabel="View official announcement"
+      ctaLink="https://www.youtube.com/shorts/kS3350cli2w"
+
+      image={shortsremix}
+      device="iPhone11"
+    />
+
+<ProjectModule 
+      client="YouTube"
+      title="Shorts Recomposition"
+      position="Product designer"
+      description="For creators seeking to turn their landscape video into portrait aspect ratio. This mobile feature allows efortless direct manipulation."
+
+      video={recomp}
+      device="iPhone11"
+    />
+
+    <ProjectModule 
       client="Disney"
       title="InApp Videos"
       position="Product designer"
-      description="A feature in Disney World & Disneyland apps that serves as a channel to promote offers and reconnect with Guests after their vacation."
+      description="A feature in Disney World & Disneyland apps to promote offers and reconnect with Guests after their vacation."
 
       image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/inappvideo.png"
       device="iPhone11"
@@ -28,7 +53,7 @@ const IndexPage = () => (
     <ProjectModule 
       client="Disney"
       title="Digital Key"
-      position="Lead interaction designer"
+      position="Interaction designer"
       description="Digital Key enhances the Direct-to-Room experience of Guests staying at Disney Resorts. Unlocks the Guest's room & common area doors (ie. fitness centers, club level lounges)."
       ctaLabel="View Official Announcement"
       ctaLink="https://www.youtube.com/watch?v=pv3TrttXOh8&feature=youtu.be"
@@ -50,7 +75,7 @@ const IndexPage = () => (
     <ProjectModule 
       client="Disney"
       title="Conversational UI"
-      position="Lead interaction designer"
+      position="Interaction designer"
       description="Special request to design and prototype a Conversational UI experience for the Disney World and Disneyland apps. Research and testing done with a prototype that handled text and voice input."
 
       video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/cuiDemo.mp4"
@@ -61,7 +86,7 @@ const IndexPage = () => (
       client="Disney"
       title="Hi-Fi Prototyping Framework"
       position="Designer & Developer"
-      description="Internal prototyping framework for Disney Parks & Resorts. Created on top of Framer back in 2016, based in CoffeeScript and JavaScript."
+      description="Internal prototyping framework for Disney Parks & Resorts. Created on top of Framer Classic, based in CoffeeScript and JavaScript."
 
       video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/partySelect.mp4"
       device="iPhone8"
@@ -70,7 +95,7 @@ const IndexPage = () => (
     <ProjectModule 
       title="Lottie for Framer"
       position="Open Source Module"
-      description="I coded a port of AirBnb's Lottie framework into Framer. This module was heavily used at Disney in 2017~2018 to explore motion in prototypes (ie. Disney Play app)."
+      description="I coded a port of AirBnb's Lottie framework into Framer Classic. This module was heavily used at Disney to explore motion in prototypes (ie. Disney Play app)."
       ctaLabel="View GitHub Repo"
       ctaLink="https://github.com/72/lottie-framer"
 
@@ -82,7 +107,7 @@ const IndexPage = () => (
       client="Globant" 
       title="Innovation Lab"
       position="Design Strategist"
-      description="Design Strategy at Globant. I led a remote team of designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives, and providing this service to selected partners."
+      description="Design Strategy at Globant. I led a remote team of 5 designers across Colombia, Argentina, and US, focused on innovation and value proposition initiatives, and providing this service to selected partners."
     />
 
 
@@ -101,7 +126,10 @@ function ProjectDescription(props){
   return(
     <div className="info">
       <div className="project-description">
-        
+        { props.client === "YouTube" &&
+          <img src={ytlogo} alt="YouTube Logo" width="120" />
+        }
+
         { props.client === "Disney" &&
           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/disney.png" alt="Disney Logo" width="90" />
         }
@@ -214,7 +242,7 @@ function Intro(props){
 		<div>
 			<p className="intro-summary">Currently at Google.
 			<br/>I'm designing mobile tools for video creators at YouTube Shorts. 
-			<br/>Check out my previous work at Disney and Globant:</p>
+			<br/>Check out my previous work at YouTube and Disney:</p>
 		</div>
 
 

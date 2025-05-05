@@ -154,7 +154,7 @@ h3 {
 
 .intro-description {
   max-width: 640px;
-  margin: 0 auto 156px;
+  margin: 0 auto 116px;
   font-family: "Inter", sans-serif;
   display: flex;
 	flex-direction: column;
@@ -253,7 +253,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 220px;
 }
 
 .info {
