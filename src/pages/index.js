@@ -10,6 +10,15 @@ import ytlogo from "../images/projects/youtubelogo.svg"
 import shortsremix from "../images/projects/shortsremix.png"
 import recomp from "../images/projects/RecompClipHB.mp4"
 import googleIllustration from "../images/work/gdraw.jpg"
+import inappvideo from "../images/projects/inappvideo.png"
+import digitalKeyVideo from "../images/projects/DKHBhq.mp4"
+import cuiDemoVideo from "../images/projects/cuiDemo.mp4"
+import partySelectVideo from "../images/projects/partySelect.mp4"
+import lottieFramerVideo from "../images/projects/lottieFramer.mp4"
+import disneyLogo from "../images/projects/disney.png"
+import globantLogo from "../images/projects/GlobantLogo.png"
+import deviceiOS72 from "../images/projects/deviceiOS72.png"
+import devicei8 from "../images/projects/devicei8.png"
 
 
 const IndexPage = () => (
@@ -46,7 +55,7 @@ const IndexPage = () => (
       position="Product designer"
       description="A feature in Disney World & Disneyland apps to promote offers and reconnect with Guests after their vacation."
 
-      image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/inappvideo.png"
+      image={inappvideo}
       device="iPhone11"
     />
 
@@ -58,7 +67,7 @@ const IndexPage = () => (
       ctaLabel="View Official Announcement"
       ctaLink="https://www.youtube.com/watch?v=pv3TrttXOh8&feature=youtu.be"
 
-      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/DKHBhq.mp4"
+      video={digitalKeyVideo}
       device="iPhone11"
     />
 
@@ -78,7 +87,7 @@ const IndexPage = () => (
       position="Interaction designer"
       description="Special request to design and prototype a Conversational UI experience for the Disney World and Disneyland apps. Research and testing done with a prototype that handled text and voice input."
 
-      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/cuiDemo.mp4"
+      video={cuiDemoVideo}
       device="iPhone8"
     />
 
@@ -88,7 +97,7 @@ const IndexPage = () => (
       position="Designer & Developer"
       description="Internal prototyping framework for Disney Parks & Resorts. Created on top of Framer Classic, based in CoffeeScript and JavaScript."
 
-      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/partySelect.mp4"
+      video={partySelectVideo}
       device="iPhone8"
     />
 
@@ -99,7 +108,7 @@ const IndexPage = () => (
       ctaLabel="View GitHub Repo"
       ctaLink="https://github.com/72/lottie-framer"
 
-      video="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/lottieFramer.mp4"
+      video={lottieFramerVideo}
       device="iPhone8"
     />
 
@@ -131,11 +140,11 @@ function ProjectDescription(props){
         }
 
         { props.client === "Disney" &&
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/disney.png" alt="Disney Logo" width="90" />
+          <img src={disneyLogo} alt="Disney Logo" width="90" />
         }
 
         { props.client === "Globant" &&
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/GlobantLogo.png" alt="Globant Logo" width="110" />
+          <img src={globantLogo} alt="Globant Logo" width="110" />
         }
 
         <h1 className="project-title"> { props.title } </h1>
@@ -156,11 +165,11 @@ function ProjectShowcase(props) {
   let device;
 
   if(props.device === "iPhone11") {
-    device = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/deviceiOS72.png"
+    device = deviceiOS72
   }
 
   if(props.device === "iPhone8") {
-    device = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/563253/devicei8.png"
+    device = devicei8
   }
 
   return(
