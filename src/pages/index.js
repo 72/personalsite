@@ -131,20 +131,20 @@ export default IndexPage
 // Components
 
 
+const CLIENT_LOGOS = {
+  YouTube: { src: ytlogo, alt: "YouTube Logo", width: "120" },
+  Disney: { src: disneyLogo, alt: "Disney Logo", width: "90" },
+  Globant: { src: globantLogo, alt: "Globant Logo", width: "110" },
+}
+
 function ProjectDescription(props){
+  const logo = CLIENT_LOGOS[props.client]
+
   return(
     <div className="info">
       <div className="project-description">
-        { props.client === "YouTube" &&
-          <img src={ytlogo} alt="YouTube Logo" width="120" />
-        }
-
-        { props.client === "Disney" &&
-          <img src={disneyLogo} alt="Disney Logo" width="90" />
-        }
-
-        { props.client === "Globant" &&
-          <img src={globantLogo} alt="Globant Logo" width="110" />
+        { logo &&
+          <img src={logo.src} alt={logo.alt} width={logo.width} />
         }
 
         <h1 className="project-title"> { props.title } </h1>
@@ -160,17 +160,14 @@ function ProjectDescription(props){
   )
 }
 
+const DEVICE_FRAMES = {
+  iPhone11: deviceiOS72,
+  iPhone8: devicei8,
+}
+
 function ProjectShowcase(props) {
 
-  let device;
-
-  if(props.device === "iPhone11") {
-    device = deviceiOS72
-  }
-
-  if(props.device === "iPhone8") {
-    device = devicei8
-  }
+  const device = DEVICE_FRAMES[props.device]
 
   return(
     <div className="showcase">
@@ -184,16 +181,14 @@ function ProjectShowcase(props) {
           }
 
           { props.video != null &&
-            <div dangerouslySetInnerHTML={{ __html: `
-              <video
-                loop
-                muted
-                autoPlay
-                playsinline
-                src="${props.video}"
-                class="${props.device}"
-              />,
-            ` }}></div>
+            <video
+              loop
+              muted
+              autoPlay
+              playsInline
+              src={ props.video }
+              className={ props.device }
+            />
           }
 
           <img className="deviceFrame" alt="Device Frame" src={device} />
@@ -238,26 +233,23 @@ function Intro(props){
 
       <div className="intro-description">
 
-		<div className="intro-personal">
-			<div>
-				<img className="intro-avatar" src={avatar72} alt={"Personal photo"} />
-			</div>
-			<div>
-				<p className="intro-name">JUAN FLORES MENA</p>
-				<p className="intro-role">Product Design & Prototyping</p>				
-			</div>
-		</div>
+        <div className="intro-personal">
+          <div>
+            <img className="intro-avatar" src={avatar72} alt={"Personal photo"} />
+          </div>
+          <div>
+            <p className="intro-name">JUAN FLORES MENA</p>
+            <p className="intro-role">Product Design & Prototyping</p>
+          </div>
+        </div>
 
-		<div>
-			<p className="intro-summary">Currently at Google.
-			<br/>I'm designing mobile tools for video creators at YouTube Shorts. 
-			<br/>Check out my previous work at YouTube and Disney:</p>
-		</div>
-
-
+        <div>
+          <p className="intro-summary">Currently at Google Labs, designing mobile tools for creatives.
+          <br/>Check out my previous work at YouTube and Disney:</p>
+        </div>
 
         {/* <div>
-	        <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
+          <img className="googleImage" src={googleIllustration} alt={"Google Illustration"} />
         </div> */}
         {/* <small>Currently at Google</small> */}
         {/* <a class="resume" href="Resume-Juan-Flores-Mena.pdf" rel="noopener noreferrer">View Resume</a> */}

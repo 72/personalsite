@@ -8,6 +8,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*
+ * Establishes a new block formatting context so the top margin of
+ * children (e.g. .menu) can't collapse through this wrapper. Without
+ * this, Gatsby's post-navigation focus() call scrolls the page down
+ * by that collapsed margin amount on every client-side route change.
+ */
+#gatsby-focus-wrapper {
+  display: flow-root;
+}
 article,
 aside,
 details,
