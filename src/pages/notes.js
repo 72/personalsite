@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,46 +20,21 @@ import svgAnim from "../images/work/svgAnim.png"
 import sequence from "../images/work/sequenceGame.jpg"
 import lottie from "../images/work/lottie.jpg"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
 	<Subscribe />
 
-	<PostOutside
-      type="Article"
-      title="The right prototyping tool for you"
-      linkTo="https://72mena.substack.com/p/the-right-prototyping-tool-for-you"
-      linkLabel="Read more →"
-    />
-	
-	<PostOutside
-      type="Article"
-      title="Give others the chance to help you"
-      linkTo="https://72mena.substack.com/p/give-others-the-chance-to-help-you"
-      linkLabel="Read more →"
-    />
-
-	<PostOutside
-      type="Article"
-      title="An actionable guide to break into Product Design"
-      linkTo="https://72mena.substack.com/p/an-actionable-guide-to-break-into"
-      linkLabel="Read more →"
-    />
-
-	<PostOutside
-      type="Article"
-      title="Thinking in bullet points"
-      linkTo="https://72mena.substack.com/p/thinking-in-bullet-points"
-      linkLabel="Read more →"
-    />
-
-	<PostOutside
-      type="Article"
-      title="Unlocking ideas"
-      linkTo="https://72mena.substack.com/p/unlocking-ideas"
-      linkLabel="Read more →"
-    />
+	{data.allSubstackPost.nodes.map(post => (
+      <PostOutside
+        key={post.link}
+        type="Article"
+        title={post.title}
+        linkTo={post.link}
+        linkLabel="Read more →"
+      />
+    ))}
 
     <PostOutside
       image={mtgcards}
@@ -147,6 +122,17 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query SubstackPostsQuery {
+    allSubstackPost(sort: { isoDate: DESC }, limit: 12) {
+      nodes {
+        title
+        link
+      }
+    }
+  }
+`
 
 // Components
 
