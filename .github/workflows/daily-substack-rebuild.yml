@@ -1,0 +1,17 @@
+name: Daily Substack rebuild
+
+on:
+  schedule:
+    # Runs once a day at 13:00 UTC. Adjust if you'd like a different time.
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  trigger-netlify-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook
+        run: |
+          curl --fail --silent --show-error -X POST "$NETLIFY_BUILD_HOOK_URL"
+        env:
+          NETLIFY_BUILD_HOOK_URL: ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
